@@ -7,12 +7,7 @@ const errorMiddleware=require("./middleware/errorHandler")
 const connectDB = require("./Db/connect");
 const productRouter=require("./routes/products")
 
-
-
-
-
 app.use("/api/v1/products",productRouter)
-
 app.use(errorMiddleware);
 app.use(notFoundmiddleware);
 
